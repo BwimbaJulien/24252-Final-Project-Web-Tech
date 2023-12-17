@@ -1,0 +1,107 @@
+/* Complete CSS Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: lavender;
+}
+
+nav {
+    background-color: floralwhite;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: red; /* Change color on hover */
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.table-container {
+    max-width: 1200px;
+    margin: 30px auto 100px; /* Adjusted margin-bottom for more space */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+button:hover {
+    background-color: darkred; /* Change color on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+footer {
+    background-color: #d9534f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Reduced padding */
+    width: 100%;
+    clear: both;
+}

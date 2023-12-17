@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BLOOD CONNECTION</title>
+    <link th:href="@{/css/admindash.css}" rel="stylesheet"/>
+    <link rel="shortcut icon" th:href="@{/images/favblood.png}"/>
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css}">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="" class="logo">
+        <img th:src="@{/images/company.png}" width="320px" alt="Company Logo" />
+    </a>
+    <ul>
+        <li><a th:href="@{/}" >Home</a></li>
+        <li><a th:href="@{/admins/login}" >Log Out</a></li>
+    </ul>
+</nav>
+
+<!-- Admin Dashboard Container -->
+<div class="dashboard-container">
+    <header>
+        <h2>Admin Dashboard</h2>
+    </header>
+
+    <!-- Dashboard Links -->
+    <ul class="dashboard-links">
+        <li><a th:href="@{/donors}" ><i class="fas fa-users"></i>Browse and Manage Donors</a></li>
+        <li><a th:href="@{/needs_bloods}" ><i class="fas fa-tint"></i>Explore Registered Blood Requests</a></li>
+        <!-- Add more dashboard links as needed -->
+    </ul>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 The Blood Connection. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

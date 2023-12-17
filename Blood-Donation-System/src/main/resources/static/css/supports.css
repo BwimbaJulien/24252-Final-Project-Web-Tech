@@ -1,0 +1,104 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Choose a suitable font */
+    background-color: lavender; /* Set a background color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Increased padding for slightly larger navbar */
+    background-color: floralwhite; /* Red tone for blood donation theme */
+    color: black;
+}
+
+/*nav a {*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*    margin: 0 15px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/* Logo Styles */
+.logo {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 300px; /* Adjust the width as needed */
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: red; /* Change color on hover */
+}
+
+/* Supporters Container Styles */
+#supports-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 60px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.point {
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #d9534f; /* Red tone for blood donation theme */
+    color: #fff;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    #supports-container {
+        padding: 10px;
+    }
+}

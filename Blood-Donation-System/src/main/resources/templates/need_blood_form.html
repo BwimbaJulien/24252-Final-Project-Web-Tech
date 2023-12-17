@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BLOOD CONNECTION</title>
+    <link th:href="@{/css/needblood.css}" rel="stylesheet"/>
+    <link rel="shortcut icon" th:href="@{/images/favblood.png}"/>
+
+    <script>
+        function validatePhoneNumber(){
+            const phoneNumberInput = document.getElementById("mobileNumber");
+            let phoneNumber = phoneNumberInput.value;
+
+            // Remove non-numeric characters from the input
+            phoneNumber = phoneNumber.replace(/\D/g, '');
+
+            // Check if the phone Number has 10digits
+            if (phoneNumber.length !== 10 || isNaN(phoneNumber)){
+                alert("Please enter a valid 10-digit phone number.");
+                phoneNumberInput.focus();
+                return false;
+            }
+
+            // Optionally, you can format the phone number before submitting
+            phoneNumberInput.value = phoneNumber.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="" class="logo">
+        <img th:src="@{/images/company.png}" width="320px" alt="Company Logo" />
+    </a>
+    <ul>
+        <li><a th:href="@{/}" >Home</a></li>
+        <li><a th:href="@{/aboutUs}" >About Us</a></li>
+        <li><a th:href="@{/contactUs}" >Contact Us</a></li>
+        <li><a th:href="@{/supporters}" >Supporters</a></li>
+        <li><a th:href="@{/admins/login}" >Admin Login</a></li>
+        <li><a th:href="@{/needs_blood/new}" >Need of Blood</a></li>
+    </ul>
+</nav>
+
+<!-- Blood Request Form -->
+<div>
+    <h2>Do you request for Blood ? Fill this Form</h2>
+    <div th:if="${message}" class="message-container">
+        <p th:text="${message}" class="success-message"></p>
+    </div>
+    <form th:action="@{/needs_blood/save}" method="post">
+        <!-- You can add more form fields as needed -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="text" id="mobileNumber" name="mobileNumber" required onblur="validatePhoneNumber()">
+        <br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <!-- Add more options as needed -->
+        </select>
+        <br>
+
+        <label for="bloodGroup">Blood Group:</label>
+        <select id="bloodGroup" name="bloodGroup" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <!-- Add more blood types as needed -->
+        </select>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2023 The Blood Connection. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

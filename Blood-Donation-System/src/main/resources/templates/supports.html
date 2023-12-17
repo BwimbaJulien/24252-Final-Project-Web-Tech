@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BLOOD CONNECTION</title>
+    <link th:href="@{/css/supports.css}" rel="stylesheet"/>
+    <link rel="shortcut icon" th:href="@{/images/favblood.png}"/>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="" class="logo">
+        <img th:src="@{/images/company.png}" width="320px" alt="Company Logo" />
+    </a>
+    <ul>
+        <li><a th:href="@{/}" >Home</a></li>
+        <li><a th:href="@{/aboutUs}" >About Us</a></li>
+        <li><a th:href="@{/contactUs}" >Contact Us</a></li>
+        <li><a th:href="@{/supporters}" >Supporters</a></li>
+        <li><a th:href="@{/admins/login}" >Admin Login</a></li>
+        <li><a th:href="@{/needs_blood/new}" >Need of Blood</a></li>
+    </ul>
+</nav>
+
+<!-- Our Supporters Content -->
+<div id="supports-container">
+    <h1>Our Supporters</h1>
+
+    <!-- Point 1: $1M + Blood Saves Lives Supporters -->
+    <div class="point">
+        <h3>1. $1M + Blood Saves Lives Supporters</h3>
+        <p>Join us in expressing gratitude to the generous supporters who have contributed over $1 million to save lives through blood donation:</p>
+        <!-- Add links and images for supporters here -->
+        <img th:src="@{/images/amazon1.png}" alt="amazon">
+        <img th:src="@{/images/toyota1.png}" alt="toyota">
+    </div>
+
+    <!-- Point 2: $500,000 + Blood Saves Lives Supporters -->
+    <div class="point">
+        <h3>2. $500,000 + Blood Saves Lives Supporters</h3>
+        <p>We extend our heartfelt thanks to the supporters who have generously donated over $500,000 to our cause:</p>
+        <!-- Add links and images for supporters here -->
+        <img th:src="@{/images/apple1.png}" alt="apple">
+        <img th:src="@{/images/mtn1.png}" alt="mtn">
+    </div>
+
+    <!-- Point 3: $250,000 + Blood Saves Lives Supporters -->
+    <div class="point">
+        <h3>3. $250,000 + Blood Saves Lives Supporters</h3>
+        <p>We appreciate the commitment of our supporters who have donated over $250,000 to help save lives through blood donation:</p>
+        <!-- Add links and images for supporters here -->
+        <img th:src="@{/images/microsoft1.png}" alt="microsoft">
+        <img th:src="@{/images/tesla1.png}" alt="tesla">
+    </div>
+</div>
+<footer>
+    <p>&copy; 2023 The Blood Connection. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

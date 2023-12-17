@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BLOOD CONNECTION</title>
+    <link th:href="@{/css/about.css}" rel="stylesheet"/>
+    <link rel="shortcut icon" th:href="@{/images/favblood.png}"/>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="" class="logo">
+        <img th:src="@{/images/company.png}" width="320px" alt="Company Logo" />
+    </a>
+    <ul>
+        <li><a th:href="@{/}" >Home</a></li>
+        <li><a th:href="@{/aboutUs}" >About Us</a></li>
+        <li><a th:href="@{/contactUs}" >Contact Us</a></li>
+        <li><a th:href="@{/supporters}" >Supporters</a></li>
+        <li><a th:href="@{/admins/login}" >Admin Login</a></li>
+        <li><a th:href="@{/needs_blood/new}" >Need of Blood</a></li>
+    </ul>
+</nav>
+
+<!-- Sub points -->
+<div id="about-container">
+    <div class="point">
+        <h3>About Us</h3>
+        <p>The Blood Connection Center is more than just a blood donation center; it's a community dedicated to making a difference. We are a team of passionate individuals committed to fostering a culture of care, compassion, and community impact. Join us in our mission to save lives and build a healthier, stronger society.</p>
+    </div>
+
+    <div class="point">
+        <h3>The Creation</h3>
+        <p>Founded in 2005, The Blood Connection Center has been a cornerstone of the community for over 15 years. Our journey began with a commitment to making a positive impact on people's lives through blood donation.</p>
+    </div>
+
+    <div class="point">
+        <h3>Our Mission</h3>
+        <p>At The Blood Connection Center, our mission is clear — to save lives by ensuring a stable and safe blood supply for medical treatments and emergencies. We firmly believe in the power of collective generosity to create a healthier and more resilient community.</p>
+    </div>
+
+    <div class="point">
+        <h3>Commitment to Safety</h3>
+        <p>Safety is our top priority. We adhere to strict protocols and standards to ensure a secure and comfortable donation environment for both donors and staff. Your well-being is at the heart of our commitment to safety.</p>
+    </div>
+
+    <div class="point">
+        <h3>Community Impact</h3>
+        <p>Through the dedication of our donors and supporters, we've made a lasting impact on the community. The blood donations received at our center have played a crucial role in saving countless lives and contributing to the overall well-being of the community.</p>
+    </div>
+
+    <div class="point">
+        <h3>Get Involved</h3>
+        <p>Join us in our noble cause by becoming a blood donor. Your decision to donate blood can make a significant impact on someone's life. Additionally, consider participating in our community events, organizing blood drives, or spreading awareness about the importance of blood donation. Together, we can create a positive change and save more lives.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 The Blood Connection. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

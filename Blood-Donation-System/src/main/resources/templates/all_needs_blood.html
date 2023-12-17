@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BLOOD CONNECTION</title>
+    <link th:href="@{/css/allneedsblood.css}" rel="stylesheet"/>
+    <link rel="shortcut icon" th:href="@{/images/favblood.png}"/>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="" class="logo">
+        <img th:src="@{/images/company.png}" width="320px" alt="Company Logo" />
+    </a>
+    <ul>
+        <li><a th:href="@{/}" >Home</a></li>
+        <li><a th:href="@{/admins/login}" >Log Out</a></li>
+    </ul>
+</nav>
+
+<!-- Admin Dashboard Links -->
+<div class="dashboard-container">
+    <h2>Admin Dashboard</h2>
+    <ul>
+        <!-- Your existing links go here -->
+    </ul>
+</div>
+
+<!-- Table to List Data -->
+<div class="table-container">
+    <h2>List of Blood Requests</h2>
+
+    <form th:action="@{/needs_bloods/search}" method="post">
+        <label for="search">Search By Blood Group:</label>
+        <input type="text" id="search" name="bloodGroup" required>
+        <button type="submit">Search</button>
+    </form>
+    <br>
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Gender</th>
+            <th>Blood Group</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="request : ${listNeedsBlood}">
+            <td th:text="${request.id}"></td>
+            <td th:text="${request.fullName}"></td>
+            <td th:text="${request.email}"></td>
+            <td th:text="${request.mobileNumber}"></td>
+            <td th:text="${request.gender}"></td>
+            <td th:text="${request.bloodGroup}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 The Blood Connection. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

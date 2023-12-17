@@ -1,0 +1,121 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Increased padding for slightly larger navbar */
+    background-color: floralwhite; /* Red tone for blood donation theme */
+    color: black;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 300px; /* Adjust the width as needed */
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: red; /* Change color on hover */
+}
+
+/* Content Container Styles */
+#content-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) of the container */
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#image-container {
+    max-width: 40%; /* Reduced width of the image container */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Text Container Styles */
+#text-container {
+    max-width: 55%; /* Increased width of the text container */
+    text-align: left;
+}
+
+h1 {
+    font-size: 32px; /* Slightly reduced font size */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 16px; /* Slightly reduced font size */
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #d9534f; /* Red tone for blood donation theme */
+    color: #fff;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+footer p{
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #image-container {
+        max-width: 100%;
+    }
+
+    .logo img {
+        width: 30px; /* Adjust the width as needed */
+    }
+}

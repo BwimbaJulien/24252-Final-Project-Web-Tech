@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BLOOD CONNECTION</title>
+    <link th:href="@{/css/home.css}" rel="stylesheet"/>
+    <link rel="shortcut icon" th:href="@{/images/favblood.png}"/>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="" class="logo">
+        <img th:src="@{/images/company.png}" width="320px" alt="Company Logo" />
+    </a>
+    <ul>
+        <li><a th:href="@{/}" >Home</a></li>
+        <li><a th:href="@{/aboutUs}" >About Us</a></li>
+        <li><a th:href="@{/contactUs}" >Contact Us</a></li>
+        <li><a th:href="@{/supporters}" >Supporters</a></li>
+        <li><a th:href="@{/admins/login}" >Admin Login</a></li>
+        <li><a th:href="@{/needs_blood/new}" >Need of Blood</a></li>
+    </ul>
+</nav>
+
+<!-- Content -->
+<div id="content-container">
+    <!-- Image Container -->
+    <div id="image-container">
+        <!-- Add your image here -->
+        <img th:src="@{/images/ImageBod2.png}" alt="Image body">
+    </div>
+
+    <!-- Text Container -->
+    <div id="text-container">
+        <h1>Welcome</h1>
+        <h3>THE BLOOD CONNECTION CENTER</h3>
+        <p>At The Blood Connection Center, we extend a warm invitation to you to be a part of our noble cause. Your decision to donate blood can make a significant impact on someone's life. Embrace the opportunity to be a lifesaver and join our community of dedicated blood donors.</p>
+        <p>Every drop of blood you donate is a gift of life, bringing hope to those in need. The act of donating blood is a simple yet powerful way to contribute to the well-being of others. Join us in making a positive difference in the world by sharing the gift of life through blood donation.</p>
+        <p>Our commitment to the community goes beyond collecting blood; it's about building a network of compassionate individuals who understand the importance of giving back. Whether you are a first-time donor or a regular supporter, your generosity helps ensure a stable blood supply for medical treatments and emergencies.</p>
+        <p>Together, we can create a healthier and more resilient community. Explore the various ways you can get involved, from organizing blood drives to spreading awareness about the importance of blood donation. Your support is vital in sustaining our mission to save lives and make a lasting impact on the lives of those in need.</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 The Blood Connection. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BLOOD CONNECTION</title>
+    <link th:href="@{/css/login.css}" rel="stylesheet"/>
+    <link rel="shortcut icon" th:href="@{/images/favblood.png}"/>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="" class="logo">
+        <img th:src="@{/images/company.png}" width="320px" alt="Company Logo" />
+    </a>
+    <ul>
+        <li><a th:href="@{/}" >Home</a></li>
+        <li><a th:href="@{/aboutUs}" >About Us</a></li>
+        <li><a th:href="@{/contactUs}" >Contact Us</a></li>
+        <li><a th:href="@{/supporters}" >Supporters</a></li>
+        <li><a th:href="@{/admins/new}" >Admin Sign Up</a></li>
+        <li><a th:href="@{/needs_blood/new}" >Need of Blood</a></li>
+    </ul>
+</nav>
+<!-- Login Form -->
+<div>
+    <h2>Please Sign In as Admin</h2>
+    <div th:if="${message}" class="message-container">
+        <p th:text="${message}" class="success-message"></p>
+    </div>
+    <form th:action="@{/admins/login/save}" method="post">
+        <!-- You can add more form fields as needed -->
+        <label for="username">Enter Your Username or Email:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <label for="password">Enter Your Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2023 The Blood Connection. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

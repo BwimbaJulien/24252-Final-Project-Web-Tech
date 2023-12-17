@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BLOOD CONNECTION</title>
+    <link th:href="@{/css/contact.css}" rel="stylesheet"/>
+    <link rel="shortcut icon" th:href="@{/images/favblood.png}"/>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="" class="logo">
+        <img th:src="@{/images/company.png}" width="320px" alt="Company Logo" />
+    </a>
+    <ul>
+        <li><a th:href="@{/}" >Home</a></li>
+        <li><a th:href="@{/aboutUs}" >About Us</a></li>
+        <li><a th:href="@{/contactUs}" >Contact Us</a></li>
+        <li><a th:href="@{/supporters}" >Supporters</a></li>
+        <li><a th:href="@{/admins/login}" >Admin Login</a></li>
+        <li><a th:href="@{/needs_blood/new}" >Need of Blood</a></li>
+    </ul>
+</nav>
+
+<!-- Contact Us Content -->
+<div id="contact-container">
+    <h1>Contact Us</h1>
+
+<!-- Point: Ready to Save Lives? -->
+<div class="point">
+    <h3>Ready to Save Lives?</h3>
+    <p>If you're ready to make a difference and contribute to our mission of saving lives, here's how you can get in touch:</p>
+    <ul>
+        <li><strong>Phone Numbers:</strong>+250784176202, +243998374386, +2569234724774</li>
+        <li><strong>Email:</strong> thebloodConnection@gmail.com</li>
+    </ul>
+</div>
+
+<!-- Point: Visit Us -->
+<div class="point">
+    <h3>Visit Us</h3>
+    <p>Stop by our center to learn more about our work and how you can be a part of our community:</p>
+    <strong><p>Address: Explore our facilities at Africa 118, Westlands Business Centre, 7th Floor, Chiromo Lane, Nairobi.</p></strong>
+    <p>We welcome you to join us and witness the impact of your support firsthand.</p>
+</div>
+
+<!-- Point: Follow Us -->
+<div class="point">
+    <h3>Follow Us</h3>
+    <p>Stay connected with us on social media for updates, events, and more.</p>
+    <p>Explore our various social media channels to engage with us and become a part of our mission:</p>
+    <!-- Add social media icons as links here -->
+    <img th:src="@{/images/facebook.png}" alt="Facebook">
+    <img th:src="@{/images/twitter.png}" alt="Twitter">
+    <img th:src="@{/images/instagram.png}" alt="Instagram">
+    <p>Your inquiries and support play a vital role in our shared commitment to saving lives.</p>
+    <p>Thank you for considering The Blood Connection as your partner in creating a healthier community.</p>
+</div>
+</div>
+<footer>
+    <p>&copy; 2023 The Blood Connection. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
