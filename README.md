@@ -1,5 +1,8 @@
 "# 24252-Final-Project-Web-Tech" 
 
+!! First of all to run the Application, you need to include a Username and Password:
+(admin as Username and admin as Password) This is the Spring Security implemented in order to prevent unauthorized users to access the system.
+
 Project Requirements & Project Scope
 ====================================
 
